@@ -9,17 +9,17 @@ namespace Calculator
             var result = 0;
             var flagForClosingApp = false;
 
+            Console.WriteLine("Hello! Here you can calculate 2 numbers using operations: \n+ \t- \t* \t/ \n");
+
             do
             {
-                Console.WriteLine("Hello! Here you can calculate 2 numbers using operations: \n+ \t- \t* \t/ \n");
-
-                Console.Write("Type first argument and press any key: ");
+                Console.Write("Type first argument and press Enter: ");
                 var firstArgument = Convert.ToInt32(Console.ReadLine());
 
-                Console.Write("Type opearation(+ - * /): ");
+                Console.Write("Type opearation(+ - * /) and press Enter: ");
                 var operation = Console.ReadLine();
 
-                Console.Write("Type second argument and press any key: ");
+                Console.Write("Type second argument and press Enter: ");
                 var secondArgument = Convert.ToInt32(Console.ReadLine());
 
                 switch (operation)
@@ -44,7 +44,7 @@ namespace Calculator
 
                 Console.WriteLine($"\nResult of calculation ({firstArgument} {operation} {secondArgument}) is equal to: {result}");
 
-                Console.Write("\nFor a new calculation please type 'y', to close app type 'n': ");
+                Console.Write("\nFor a new calculation please type 'y', for close app - 'n' and press Enter: ");
                 var userAnswer = Console.ReadLine();
                 
 
