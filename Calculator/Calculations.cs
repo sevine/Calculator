@@ -38,7 +38,7 @@ namespace Calculator
                         break;
 
                     default:
-                        Console.WriteLine("You type wrong operation");
+                        Console.WriteLine("You type wrong operation!");
                         break;
                 }
 
